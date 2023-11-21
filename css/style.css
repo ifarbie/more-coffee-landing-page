@@ -1,0 +1,346 @@
+:root {
+    --primary: #31241e;
+    --secondary: #d1c8c1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 70px;
+    color: var(--primary);
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    margin: 0 10px;
+}
+
+/* HEADER */
+header {
+    color: var(--primary);
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* LOGO */
+.logo img {
+    margin-bottom: -12.5px;
+    width: 90px;
+}
+
+.logo span {
+    margin-left: -18px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header a img {
+    margin-top: -10px;
+}
+
+/* NAVBAR */
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li {
+    font-weight: 600;
+    margin-right: 3.8rem;
+    font-size: 1.3rem;
+}
+
+header nav ul li:hover {
+    color: #86654b;
+    transition: 0.2s;
+}
+
+/* CONTENT */
+/* CONTENT-HOME */
+.content-home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    padding-left: 3rem;
+    height: 400px;
+    background-image: url("../assets/logo/2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.container-order {
+    display: flex;
+}
+
+.container-order article {
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20rem;
+}
+
+.container-order article p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-right: 90px;
+}
+
+.container-order article a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.55rem;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+    width: 13.5rem;
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    font-weight: 700;
+    border: 1px solid var(--secondary);
+}
+
+.container-order article a:hover,
+#content-about .row article a:hover {
+    background-color: white;
+    color: var(--secondary);
+    transition: 0.2s;
+}
+
+.container-home-images {
+    flex: 3 1 5rem;
+    /* margin-left: 0.5rem; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+.home-image {
+    /* margin-left: 1.5rem; */
+    width: 230px;
+}
+
+.home-image img {
+    width: 100%;
+}
+
+/* CONTENT-ABOUT */
+#content-about {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#content-about .row {
+    display: flex;
+}
+
+#content-about .about-image {
+    flex: 1 1 30rem;
+}
+
+#content-about .about-image img {
+    border-top-right-radius: 100%;
+    width: 100%;
+}
+
+#content-about .row article {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 35rem;
+    text-align: justify;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+#content-about .row article h3 {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2rem;
+}
+
+#content-about .row article p {
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#content-about .row article a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.55rem;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+    width: 13.5rem;
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    font-weight: 700;
+    border: 1px solid var(--secondary);
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 1rem;
+}
+
+/* ASIDE - SOCIAL MEDIA */
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    z-index: 999;
+}
+
+aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: var(--primary);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+aside .social-media ul li {
+    list-style: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    border-top: 3px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+footer .contact {
+    padding-top: 0.7rem;
+    width: 600px;
+}
+
+footer .contact h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+footer .contact .contacts {
+    width: 400px;
+    text-align: justify;
+    margin: 0.2rem auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .contact .contacts p {
+    font-weight: 600;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+    .logo span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-order article {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .container-order article p {
+        padding: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .container-home-images {
+        display: none;
+    }
+
+    #content-about .row article p {
+        font-size: 0.9rem;
+    }
+
+    #content-about .about-image {
+        flex: 1 1 20rem;
+    }
+
+    #content-about .about-image img {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin-right: 1.8rem;
+    }
+
+    #content-about .row article h3 {
+        font-size: 1.5rem;
+    }
+}
