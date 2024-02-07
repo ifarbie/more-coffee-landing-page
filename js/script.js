@@ -1,6 +1,8 @@
 const navigationList = ["Home", "About", "Contact"];
+const socialMedias = ["Instagram", "TikTok", "Youtube", "X-Twitter"]
 addNavigation(navigationList);
 addHamburgerMenuButton();
+addSocialMedia(socialMedias);
 
 const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener('click', () => {
@@ -40,6 +42,25 @@ function addHamburgerMenuButton() {
         span.classList.add('hamburger-line');
         button.appendChild(span)
     }
-    
+
     header.appendChild(button);
+}
+
+function addSocialMedia(socialMedias) {
+    const elSocialMedia = document.querySelector(".social-media");
+    const ul = document.createElement("ul");
+
+    for (socialMedia of socialMedias) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.setAttribute("href", "#");
+        const i = document.createElement("i");
+        i.setAttribute("class", `fa-brands fa-${socialMedia.toLowerCase()}`);
+
+        a.appendChild(i)
+        li.appendChild(a);
+        ul.appendChild(li)
+    }
+
+    elSocialMedia.appendChild(ul);
 }
