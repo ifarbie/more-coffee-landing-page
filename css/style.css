@@ -203,7 +203,7 @@ main {
     justify-self: flex-end;
     margin-top: 1rem;
 }
-aside {
+aside.social-media-container {
     position: fixed;
     inset-block: 0;
     inset-inline-end: 0;
