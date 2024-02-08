@@ -370,6 +370,8 @@ footer #contact .contacts p {
     aside .social-media ul {
         padding: 0.9rem 0.4rem;
         gap: 0.3rem;
+        border-top-left-radius: 0.65rem;
+        border-bottom-left-radius: 0.65rem;
     }
     aside .social-media li a {
         text-decoration: none;
