@@ -16,10 +16,14 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 20px 70px;
     color: var(--primary);
-    overflow-x-scroll: none;
+    overflow-x: hidden;
 }
 a {
     color: inherit;
+}
+.container {
+    max-width: 1440px;
+    margin: auto;
 }
 
 /* HEADER */
